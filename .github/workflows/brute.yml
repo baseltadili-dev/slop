@@ -5,20 +5,46 @@ on:
       full:  { required: true }
       len:   { default: "7" }
       alpha: { default: "1" }
-      start: { default: "0" }
-      w:     { default: "4" }
+      span:  { default: "2831023245" }
+      w:     { default: "3" }
+permissions:
+  contents: read
+  issues: write
 jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm i hash-wasm
-      - run: node fast.mjs ${{ inputs.start }}
+      - name: brute
         env:
-          FULL:  ${{ inputs.full }}
-          LEN:   ${{ inputs.len }}
+          FULL: ${{ inputs.full }}
+          LEN: ${{ inputs.len }}
           ALPHA: ${{ inputs.alpha }}
-          W:     ${{ inputs.w }}
+          W: ${{ inputs.w }}
+        run: |
+          START=$(( ${{ matrix.shard }} * ${{ inputs.span }} ))
+          node fast.mjs "$START" "${{ inputs.span }}" | tee -a out.log
+      - name: report
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          START=$(( ${{ matrix.shard }} * ${{ inputs.span }} ))
+          hits=$(grep -a '^HIT ' out.log || true)
+          [ -z "$hits" ] && echo "لا HIT في الشريحة ${{ matrix.shard }}" && exit 0
+          while IFS= read -r line; do
+            s=${line#HIT }
+            gh api -X POST "repos/$GITHUB_REPOSITORY/issues" \
+              -f title="HIT $s" \
+              -f body="shard=${{ matrix.shard }} start=$START len=${{ inputs.len }} alpha=${{ inputs.alpha }} run=$GITHUB_RUN_ID" >/dev/null
+            echo "نُشر: $s"
+          done <<< "$hits"
