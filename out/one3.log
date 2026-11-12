@@ -1,0 +1,67 @@
+غاز: 0.002085722919775585 | SLOP: 1080.963802487
+
+جولة 1 | عامل 0x3280421a5EF1CE873315A222dD81a980dD2Cff62
+ شراء فشل: missing provider
+
+جولة 2 | عامل 0xAd3325570Bd19911cbab9caf714c630709018039
+ شراء فشل: missing provider
+
+جولة 3 | عامل 0xb065E658004D2F2f12FC81Db4705e8eF4D65Eafe
+ شراء فشل: missing provider
+انتهت الجولات
+غاز: 0.000884146252824988 | SLOP: 1080.963802487
+
+جولة 1 | عامل 0xb0Cef912890EA87703E8E60cC06dA5FFA3d21C92
+ شراء 1
+ استلم 61913.160985361 SLOP
+ إرسال فشل: insufficient funds for intrinsic transaction cost
+
+جولة 2 | عامل 0x18512Bb67800cACAccCecDaac0522d8b0716e94a
+ شراء 1
+ استلم 61913.160006429 SLOP
+ إرسال فشل: insufficient funds for intrinsic transaction cost
+
+جولة 3 | عامل 0xe062E6f1636d4E7491cA3664f8Eb8e3Cfb2EE404
+file:///data/data/com.termux/files/home/node_modules/ethers/lib.esm/utils/errors.js:132
+            error = new Error(message);
+                    ^
+
+Error: insufficient funds (transaction={ "from": "0xa4bc81ceccc9d8637147fa4b5daaf55e8f9ef33f", "maxFeePerGas": "0x2625a00", "maxPriorityFeePerGas": "0x1312d00", "nonce": "0x40", "to": "0xe062e6f1636d4e7491ca3664f8eb8e3cfb2ee404", "value": "0x16bcc41e90000" }, info={ "error": { "code": -32003, "message": "insufficient funds for gas * price + value: have 83095188854014 want 400000000000000" }, "payload": { "id": 49, "jsonrpc": "2.0", "method": "eth_estimateGas", "params": [ { "from": "0xa4bc81ceccc9d8637147fa4b5daaf55e8f9ef33f", "maxFeePerGas": "0x2625a00", "maxPriorityFeePerGas": "0x1312d00", "nonce": "0x40", "to": "0xe062e6f1636d4e7491ca3664f8eb8e3cfb2ee404", "value": "0x16bcc41e90000" } ] } }, code=INSUFFICIENT_FUNDS, version=6.17.0)
+    at makeError (file:///data/data/com.termux/files/home/node_modules/ethers/lib.esm/utils/errors.js:132:21)
+    at JsonRpcProvider.getRpcError (file:///data/data/com.termux/files/home/node_modules/ethers/lib.esm/providers/provider-jsonrpc.js:677:24)
+    at file:///data/data/com.termux/files/home/node_modules/ethers/lib.esm/providers/provider-jsonrpc.js:298:45
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  code: 'INSUFFICIENT_FUNDS',
+  transaction: {
+    maxFeePerGas: '0x2625a00',
+    maxPriorityFeePerGas: '0x1312d00',
+    nonce: '0x40',
+    value: '0x16bcc41e90000',
+    from: '0xa4bc81ceccc9d8637147fa4b5daaf55e8f9ef33f',
+    to: '0xe062e6f1636d4e7491ca3664f8eb8e3cfb2ee404'
+  },
+  info: {
+    payload: {
+      method: 'eth_estimateGas',
+      params: [
+        {
+          maxFeePerGas: '0x2625a00',
+          maxPriorityFeePerGas: '0x1312d00',
+          nonce: '0x40',
+          value: '0x16bcc41e90000',
+          from: '0xa4bc81ceccc9d8637147fa4b5daaf55e8f9ef33f',
+          to: '0xe062e6f1636d4e7491ca3664f8eb8e3cfb2ee404'
+        }
+      ],
+      id: 49,
+      jsonrpc: '2.0'
+    },
+    error: {
+      code: -32003,
+      message: 'insufficient funds for gas * price + value: have 83095188854014 want 400000000000000'
+    }
+  },
+  shortMessage: 'insufficient funds'
+}
+
+Node.js v26.13.0

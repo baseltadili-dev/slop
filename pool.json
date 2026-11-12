@@ -1,0 +1,22 @@
+[
+  {
+    "pk": "0xcf59f84349d66fc6c6a6a99d7f29ff978c3959283924b1425b89ca73f53ac25e",
+    "addr": "0xD521dB4b36313D1f0FE62DEE962bb8259446DAA4",
+    "ok": false
+  },
+  {
+    "pk": "0x964ca41c4343962dba11276e2be89e8337e65ec8326dab13ea18516444f3c4b1",
+    "addr": "0xc5a91FDD98df7Ac36829Ad398F365c0526Fc49B2",
+    "ok": false
+  },
+  {
+    "pk": "0x3854656150ece13e814d47cf6e699cb2c2014f39623aa34557e8e0a743b8720d",
+    "addr": "0x5b7c1721456b3628dAda9e898cd88CbE3D75D4dd",
+    "ok": false
+  },
+  {
+    "pk": "0x83464018829d0a7a0a6e6595f6b0143d4f85f78f6bd191d64ca906ae674f0af2",
+    "addr": "0x60945FC366FCA58A706Ca0f081A7DC15d6C6A116",
+    "ok": false
+  }
+]

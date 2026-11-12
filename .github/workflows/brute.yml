@@ -1,0 +1,24 @@
+name: brute
+on:
+  workflow_dispatch:
+    inputs:
+      full:  { required: true }
+      len:   { default: "7" }
+      alpha: { default: "1" }
+      start: { default: "0" }
+      w:     { default: "4" }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm i hash-wasm
+      - run: node fast.mjs ${{ inputs.start }}
+        env:
+          FULL:  ${{ inputs.full }}
+          LEN:   ${{ inputs.len }}
+          ALPHA: ${{ inputs.alpha }}
+          W:     ${{ inputs.w }}

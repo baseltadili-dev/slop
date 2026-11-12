@@ -1,0 +1,13 @@
+صيّاد | مستلم الغنيمة 0xA4BC81CecCC9D8637147Fa4b5daAf55E8f9Ef33f | عتبة 10000.0 SLOP | مخزون 6
+ملف المفاتيح: /data/data/com.termux/files/home/slop/pool.json
+المخزون مموّل
+صيّاد | مستلم الغنيمة 0xA4BC81CecCC9D8637147Fa4b5daAf55E8f9Ef33f | عتبة 50.0 SLOP | مخزون 6
+ملف المفاتيح: /data/data/com.termux/files/home/slop/pool.json
+المخزون مموّل
+>>> فائض 120.0 | إلى 0xD521dB4b36313D1f0FE62DEE962bb8259446DAA4
+  فشل: contract runner does not support sending transactions
+صيّاد | مستلم الغنيمة 0xA4BC81CecCC9D8637147Fa4b5daAf55E8f9Ef33f | عتبة 50.0 SLOP | مخزون 6
+ملف المفاتيح: /data/data/com.termux/files/home/slop/pool.json
+المخزون مموّل
+>>> فائض 120.0 | إلى 0xD521dB4b36313D1f0FE62DEE962bb8259446DAA4
+  فشل: priorityFee cannot be more than maxFee

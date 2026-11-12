@@ -1,0 +1,20 @@
+غاز: 0.002198914716093667 | SLOP: 1080.963802487
+
+جولة 1 | 300.0 SLOP -> 0x1Cf737C13b62d428d081901ba9B9518ca04Ca4f2
+ tx1 0x879bb02912ffb26bd8244810e09ff3b0a7f67679be3c898aaeb6949787ec617e 
+ tx2 0x5e2624f714146da17ce43cf903db089f71342d0a803edcc196cac225ee6cc9bd
+ tx1 0 بلوك undefined | tx2 0 بلوك undefined
+ ارتدّ — جولة تالية
+
+جولة 2 | 300.0 SLOP -> 0x71C0d8267b49EbC39E706a3c31727cd11fb4faB9
+ tx1 0x893ab8b0a4b20db8b40ca8fd46de643dd46bd8ecc21d819b6fb7e5c8740db8ce 
+ tx2 0xfc35a6994c057b7c88f76c6c677d68ac67176bf46f35d75cdd0d73f25ce87fc3
+ tx1 0 بلوك undefined | tx2 0 بلوك undefined
+ ارتدّ — جولة تالية
+
+جولة 3 | 300.0 SLOP -> 0xF107a0Be66219dF8C527C6076B8B82B4AF996Ece
+ tx1 0x50c9a0d6b0c0472ff6a250e84c7ad10dde47e4fa04d9b1fec76b0c22039bcf81 
+ tx2 0xea5be51afc9ea3f0e0090ff8ef30718e1011ad4ef9fcecc2adf16ac0de77e92a
+ tx1 0 بلوك undefined | tx2 0 بلوك undefined
+ ارتدّ — جولة تالية
+انتهت الجولات

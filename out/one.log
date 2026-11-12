@@ -1,0 +1,46 @@
+غاز: 0.002220337985457253 | SLOP: 1080.963802487
+هدف نظيف: 0x9B8A69043f7D5BEfF2f9151b33Cd0b56CD3ADdd3
+file:///data/data/com.termux/files/home/node_modules/ethers/lib.esm/utils/errors.js:132
+            error = new Error(message);
+                    ^
+
+Error: transaction execution reverted (action="sendTransaction", data=null, reason=null, invocation=null, revert=null, transaction={ "data": "", "from": "0xA4BC81CecCC9D8637147Fa4b5daAf55E8f9Ef33f", "to": "0xA5a3A7a1dec1a57E41A0Cdd8c2129CfD7B46b592" }, receipt={ "_type": "TransactionReceipt", "blobGasPrice": null, "blobGasUsed": "14800", "blockHash": "0x1eae007830cf413aa690a150653039f715b47de595ea7dd51a1b9dfff26c2664", "blockNumber": 56003976, "contractAddress": null, "cumulativeGasUsed": "113824", "from": "0xA4BC81CecCC9D8637147Fa4b5daAf55E8f9Ef33f", "gasPrice": "25000000", "gasUsed": "35889", "hash": "0x7231168f1d625abc9ff86baebaf2cb532ae4e46489a4f2b78f7435a1cb915c9e", "index": 2, "logs": [  ], "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", "root": null, "status": 0, "to": "0xA5a3A7a1dec1a57E41A0Cdd8c2129CfD7B46b592" }, code=CALL_EXCEPTION, version=6.17.0)
+    at makeError (file:///data/data/com.termux/files/home/node_modules/ethers/lib.esm/utils/errors.js:132:21)
+    at assert (file:///data/data/com.termux/files/home/node_modules/ethers/lib.esm/utils/errors.js:151:15)
+    at checkReceipt (file:///data/data/com.termux/files/home/node_modules/ethers/lib.esm/providers/provider.js:1135:13)
+    at JsonRpcProvider.txListener (file:///data/data/com.termux/files/home/node_modules/ethers/lib.esm/providers/provider.js:1181:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  code: 'CALL_EXCEPTION',
+  action: 'sendTransaction',
+  data: null,
+  reason: null,
+  invocation: null,
+  revert: null,
+  transaction: {
+    to: '0xA5a3A7a1dec1a57E41A0Cdd8c2129CfD7B46b592',
+    from: '0xA4BC81CecCC9D8637147Fa4b5daAf55E8f9Ef33f',
+    data: ''
+  },
+  receipt: TransactionReceipt {
+    provider: JsonRpcProvider {},
+    to: '0xA5a3A7a1dec1a57E41A0Cdd8c2129CfD7B46b592',
+    from: '0xA4BC81CecCC9D8637147Fa4b5daAf55E8f9Ef33f',
+    contractAddress: null,
+    hash: '0x7231168f1d625abc9ff86baebaf2cb532ae4e46489a4f2b78f7435a1cb915c9e',
+    index: 2,
+    blockHash: '0x1eae007830cf413aa690a150653039f715b47de595ea7dd51a1b9dfff26c2664',
+    blockNumber: 56003976,
+    logsBloom: '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
+    gasUsed: 35889n,
+    blobGasUsed: 14800n,
+    cumulativeGasUsed: 113824n,
+    gasPrice: 25000000n,
+    blobGasPrice: null,
+    type: 2,
+    status: 0,
+    root: undefined
+  },
+  shortMessage: 'transaction execution reverted'
+}
+
+Node.js v26.13.0

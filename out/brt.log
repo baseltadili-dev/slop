@@ -1,0 +1,27 @@
+غاز: 0.002449645036531362 | SLOP: 1440.963802487
+عناوين نظيفة مموّلة: 0x6D5Bdb2e931FeAE591B4949995b8795F45372875 0x04D63aF8dbf417E520079B15e5863391008D87c0 0x65B7AEd678491198dC69EddE28E39218133b25AB
+
+جولة 1/3 | nonce 35 | هدف 0x6D5Bdb2e931FeAE591B4949995b8795F45372875
+  tx1 0x7924c7ca9dc6f41e54fd32925f711d6e843e4bad4714395e7809875d3ee19a4c
+  tx2 0x00fd411611e036212d53c9c7dc009195e3d5e36ae1eedc5d0006ec012c41e7f1
+  tx1 1 بلوك 55997248 | tx2 1 بلوك 55997250 | فرق 2
+>>> نجح | عند الهدف: 120.0
+file:///data/data/com.termux/files/home/slop/brt.mjs:59
+    console.log(">>> مفتاح الهدف:",freshKeys[r]);
+                                   ^
+
+ReferenceError: freshKeys is not defined
+    at file:///data/data/com.termux/files/home/slop/brt.mjs:59:36
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+Node.js v26.13.0
+غاز: 0.002376388273597398 | SLOP: 1320.963802487
+عناوين نظيفة مموّلة: 0xe516a0C11bC8Eccf6Dd43bd02DBDd56986a9cdff 0xeDB7a63Cc5902E7f18CE1Dbf0D8da2439b5387c4 0xC26239668532Bd5929C3eE644a8185777980AAf2
+
+جولة 1/3 | nonce 40 | هدف 0xe516a0C11bC8Eccf6Dd43bd02DBDd56986a9cdff
+  tx1 0xd437d4ed646d52b2c0f46bb5e6e93908c328bc741e43a07a47a590b35133b803
+  tx2 0x6a58d4acd781bfb04ea13a25383e4f3aa74fa07be4a41bcea83b61120d995fc4
+  tx1 1 بلوك 55997373 | tx2 1 بلوك 55997375 | فرق 2
+>>> نجح | عند الهدف: 120.0
+>>> مفتاح الهدف: 0xdfaf48360e114f5033772f33e8e10dcf5d6253698642f1d662ec67164b38eb6c
+>>> وصلتك: 1320.963802487

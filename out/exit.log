@@ -1,0 +1,19 @@
+SLOP: 10367.952381047 | ETH: 0.00002045459758903
+هدف نظيف: 0x0ef6263A4e505156cbA7D3D4C7AEcb601AC9DEE1 
+مفتاحه: 0x5b5d1dd5a0ebb3e13ccf14d1e87c2b0821dbc18a76eee05c50bf7fe820ba7f1d
+
+1) موافقة للحارس...
+   approve: 1
+2) تحويل إلى الحارس...
+   transfer: 1
+   عند الحارس: 10367.952381047 | عندك: 9.0
+
+3) محاكاة أشكال النداء (مجاناً)...
+   T→fresh    ✗ execution reverted
+   fresh→T    ✗ execution reverted
+   T→ME       ✗ execution reverted
+   T→K        ✗ execution reverted
+   T→pair     ✗ execution reverted
+   T→router   ✗ execution reverted
+
+لا شكل مرّ. الرمز آمن عند الحارس (معفى). توقف.
